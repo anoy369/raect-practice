@@ -114,6 +114,18 @@ h1 {
   flex-wrap: wrap;
 }
 
+.movieType{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movieType div{
+  margin: 0 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
 .movie {
   width: 310px;
   height: 460px;
