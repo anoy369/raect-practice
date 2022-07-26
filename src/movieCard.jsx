@@ -1,19 +1,19 @@
 import './App.css';
 
-const MovieCard = () => {
+const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
     return(
-        <div className="movie">
+        <div className="movie" id={imdbID}>
           <div>
-            <p>year</p>
+            <p>{Year}</p>
           </div>
 
           <div>
-            <img src="https://via.placeholder.com/400" alt="poster" />
+            <img src={Poster !== 'N/A' ? Poster : 'https://via.placeholder.com/400'} alt="poster" />
           </div>
 
           <div>
-            <span>type</span>
-            <h3>Title</h3>
+            <span>{Type}</span>
+            <h3>{Title}</h3>
           </div>
         </div>
     )
